@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<!--    <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+    <meta rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/sign-in/">
+    <title>Document</title>
+
+
+    <style>
+        .share_btn{
+            position: absolute;
+
+            top:0;
+            right:0px;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-align: center;
+            align-items: center;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background-color: #f5f5f5;
+        }
+
+        .form-signin {
+            width: 100%;
+            max-width: 330px;
+            padding: 15px;
+            margin: auto;
+        }
+
+        .form-signin .checkbox {
+            font-weight: 400;
+        }
+
+        .form-signin .form-control {
+            position: relative;
+            box-sizing: border-box;
+            height: auto;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .form-signin .form-control:focus {
+            z-index: 2;
+        }
+
+        .form-signin input[] {
+            margin-bottom: -1px;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        .form-signin input[type="password"] {
+            margin-bottom: 10px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+        .form-signin button{
+            background-color: greenyellow;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+<!--<div class="col-sm-4 offset-md-1 py-4">-->
+<!--          <h4 class="text-white">describe</h4>-->
+<!--          <ul class="list-unstyled">-->
+<!--            <li><a href="#" class="text-white">Follow on Twitter</a></li>-->
+<!--            <li><a href="#" class="text-white">Like on Facebook</a></li>-->
+<!--            <li><a href="#" class="text-white">Email me</a></li>-->
+<!--          </ul>-->
+<!--        </div>-->
+    <div class="d-flex justify-content-between">
+<button class="share_btn" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle">
+    <img src="https://static.zzz.studio/static/share%403x.png" alt>
+</button>
+    </div>
+
+<form class="form-signin">
+    <img class="mb-4" src="{{ site.baseurl }}/docs/{{ site.docs_version }}/assets/brand/bootstrap-solid.svg" alt=""
+         width="72" height="72">
+    <h1 class="h3 mb-3 font-weight-normal">우정 테스트 만들기</h1>
+    <label for="inputEmail" class="sr-only">이름</label>
+    <input id="inputEmail" class="form-control" placeholder="이름" required autofocus>
+    <label for="inputPassword" class="sr-only">제페토 코드</label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="제페토 코드" required>
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit">시작하기</button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2019 Pirogramming</p>
+</form>
+</body>
+</html>
